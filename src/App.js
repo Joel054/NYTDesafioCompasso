@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+// import api from './services/api'
+import LinkWrapper from './components/LinkWrapper';
+import Main from './components/NewsList'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br/>
+      {/* <h1>{api.api}</h1> */}
+      {/* {api.urlApi} */}
+      <Main/>
+      <br/>
+      <LinkWrapper to="/ " activeStyle={{}}>Início</LinkWrapper>
+      <br/>
+      <LinkWrapper to="/Technology">Tecnologia</LinkWrapper>
+      
     </div>
   );
 }
