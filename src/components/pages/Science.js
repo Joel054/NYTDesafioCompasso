@@ -20,11 +20,20 @@ export default class science extends Component {
         const article = this.state.news;
         return(
             <Box display="block" flexWrap="nowrap" justifyContent="wrapper">
-                {/* <SimpleModal></SimpleModal> */}
+                
                 <h1>A quantidade de noticias Science é:{article.length}</h1>
                 {article.map(news =>
-                        <CardNews key ={news._id} image={news.multimedia[4].url} title={news.title} content={news.abstract} link={news.url} ></CardNews>
-                )}                    
+                    <CardNews 
+                        key ={news._id} 
+                        image={news.multimedia[3].url} 
+                        imageG={news.multimedia[0].url} 
+                        title={news.title} 
+                        content={news.abstract} 
+                        link={news.url}   
+                        category ='Ciência' 
+                    />
+                )}            
+                     
                 {/* <BasicPagination/>     */}
             </Box>
         ) 

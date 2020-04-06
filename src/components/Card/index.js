@@ -7,21 +7,20 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import SimpleModal from '../Modal/dialog'
 // import { positions } from '@material-ui/system';
 
 const useStyles = makeStyles({
 	root: {
-		maxWidth: 800,
+		maxWidth: 320,
 	},
 	media: {
-		height: 200,
+		height: 300,
 	},
 });
 
 function CardNews(props) {
 	const classes = useStyles();
-	// const {image, title, content} = this.props;
-
 	return (
 		<Card className={classes.root}>
 			<CardActionArea>
@@ -41,9 +40,13 @@ function CardNews(props) {
 				</CardContent>
 			</CardActionArea>
 			<CardActions>
-				<Button variant="outlined" color="secondary">
-					Ver Mais
-		</Button>
+				 <SimpleModal
+					image={props.imageG} 
+					title={props.title} 
+					resume={props.content} 
+					link={props.url}
+					category ='Ciência' 
+				></SimpleModal>
 			</CardActions>
 		</Card>
 	);
