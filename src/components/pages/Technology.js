@@ -2,7 +2,7 @@ import React from 'react';
 import LinkWrapper from '../LinkWrapper';
 
 
-const Technology = () => {
+const TechnologyPage = () => {
     return(
         <div>
             <h1>Technology funcionou</h1>
@@ -11,4 +11,4 @@ const Technology = () => {
         </div>
     )
 }
-export default Technology;
+export default TechnologyPage;
