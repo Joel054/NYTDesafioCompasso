@@ -5,8 +5,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-
+import HomeIcon from '@material-ui/icons/Menu';
+//
+import LinkWrapper from '../LinkWrapper'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    // textDecoration: 'none',
   },
 }));
 
@@ -26,13 +28,26 @@ export default function Header() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography variant="h6" className={classes.title}>
-            News
+            
+            
+            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="ciencia">
+            <HomeIcon/>
+            </IconButton>
+            <Button variant="default" edge="start" color="inherit">
+              <LinkWrapper to="/Science">Ciência</LinkWrapper>
+            </Button>
+            <Button variant="default">
+              <LinkWrapper to="/Technology">Tecnologia</LinkWrapper>
+            </Button>
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" color="white">
+            <LinkWrapper to="/" activeStyle={{}}>Início</LinkWrapper>
+          </Button>
+          
         </Toolbar>
       </AppBar>
     </div>

@@ -1,8 +1,10 @@
-import React, { Component, Fragment } from "react"
-import {NewsScience, NewsTech } from './../services/api'
-import Button from '@material-ui/core/Button'
-import Header from './Header'
-import SimpleModal from './Modal'
+import React, { Component, Fragment } from "react";
+import {NewsScience, NewsTech } from './../services/api';
+import Button from '@material-ui/core/Button';
+import SimpleModal from './Modal';
+import BasicPagination from './Pagination';
+import MediaCard from './Card';
+
 export default class Main extends Component {
     state ={
         newsT: [],
@@ -29,11 +31,16 @@ export default class Main extends Component {
         const technologie = this.state.newsT;
         return(
             <Fragment>
-                <Header></Header>
+                
                 <SimpleModal></SimpleModal>
                 <Button variant="contained" color="primary">
                     Olá Mundo
                 </Button>
+                <BasicPagination/>
+                <MediaCard/>
+                <hr/>
+                {/* {technologie[1]} */}
+                <hr/>
                     <h1>A quantidade de noticias é:{science.length}</h1>
                         <p>sci:</p>
                         {science.map(news =><li key ={news._id}>

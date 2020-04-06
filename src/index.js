@@ -2,18 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Technology from './components/pages/Technology'
+import RoutePages from './components/Routes'
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      //aqui vai as rotas
-      <Route path='/'exact={true} component={App} />
-      <Route path='/technology' component={Technology} />
-    </Switch>
-  </BrowserRouter>
+  <RoutePages/>
   // <React.StrictMode>
-  //   <App />
+    // <App />
   // </React.StrictMode>
   ,document.getElementById('root')
 );
