@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+// import App from './App';
+import './style.css'
 import * as serviceWorker from './serviceWorker';
-import RoutePages from './components/Routes'
+import RoutePages from './components/Routes' 
 ReactDOM.render(
   <RoutePages/>
   // <React.StrictMode>

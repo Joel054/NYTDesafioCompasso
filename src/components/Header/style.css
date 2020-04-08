@@ -1,0 +1,13 @@
+
+.textbutton a{
+    text-decoration: none!important;
+    color: white;
+}
+.textbutton Button{
+    margin: 2px;
+}
+.center{
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
