@@ -5,6 +5,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Chip from '@material-ui/core/Chip'
 
 export default function SimpleModal(props) {
 	const [open, setOpen] = React.useState(false);
@@ -29,7 +30,10 @@ export default function SimpleModal(props) {
 				aria-describedby="alert-dialog-description"
 			>
 				<DialogTitle id="alert-dialog-title" className="centerText">{props.title}</DialogTitle>
+				
 				<DialogContent>
+					{console.log(props)}
+					<Chip  size="small" style={{margin :"5px"}} label={props.category}/>
 					<img src={props.image} alt={props.title} width="550px" alignIten="center"></img>
 					<DialogContentText id="alert-dialog-description">
 						{props.resume}

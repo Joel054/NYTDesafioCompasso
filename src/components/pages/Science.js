@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import CardNews from './../Card';
 import { Fragment } from "react";
 import Header from './../Header';
+import Typography from '@material-ui/core/Typography'
 import './../Card/style.css'
 export default class science extends Component {
     state = {
@@ -25,7 +26,13 @@ export default class science extends Component {
                 <Container maxWidth="lg">
                     <Grid container justify="center" xs={12} spacing={3}>
                         <Grid justify="center" item xs={12}>
-                            <h1 >A quantidade de noticias Science é:{article.length}</h1>
+                        <Typography gutterBottom >
+                            <h1 style={{textAlign :"center", padding: "20px"}} >
+                                Principais notícias sobre Ciência do New York Times
+                            </h1>
+                            <h3 style={{textAlign :"center", padding: "20px"}} >Atualmente possuimos {article.length} notícias mais lidas</h3>
+                        </Typography>
+                            
                         </Grid>
                         {article.map(news =>
                             <Grid item xs={4} className="centerCard">
