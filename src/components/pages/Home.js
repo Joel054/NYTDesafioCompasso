@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import CardHome from '../Card/cardHome';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 export default class Home extends Component {
