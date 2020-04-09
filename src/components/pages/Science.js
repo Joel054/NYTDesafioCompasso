@@ -30,7 +30,7 @@ export default class science extends Component {
                             <h1 style={{textAlign :"center", padding: "20px"}} >
                                 Principais notícias sobre Ciência do New York Times
                             </h1>
-                            <h3 style={{textAlign :"center", padding: "20px"}} >Atualmente possuimos {article.length} notícias mais lidas</h3>
+                            <h3 style={{textAlign :"center", padding: "20px"}} >Atualmente possuimos {article.length} notícias nesta categoira</h3>
                         </Typography>
                             
                         </Grid>
