@@ -10,7 +10,7 @@ Em questões de UI, foi pensado um layout simples, que trouxesse facilidade e ag
 A aplicação se baseou em cards, esses capazes de exibir os conteúdos de forma limpa e simplificada, reduzindo assim a sensação de "desorganização" quando há muito conteúdo disponível.
 
 A estrutura do projeto é apresentada abaixo, buscando manter uma organização trazendo uma explicação clara de onde encontram-se cada recurso no projeto.
-
+```sh
 ├───public
 └───src
     ├───components
@@ -20,7 +20,7 @@ A estrutura do projeto é apresentada abaixo, buscando manter uma organização 
     │   ├───pages
     │   └───Routes
     └───services
-
+```
 Além da separação dos componentes, em `/services` é possível encontrar o arquivo `api.js,` responsável este por armazenar as configurações da API e a conexão com a mesma. Foi utilizada a lib [Axios](https://github.com/axios/axios) para este fim.
 
 ## Scripts
